@@ -1,0 +1,182 @@
+/*----------------------element related css------------------------------*/
+/* general rules to css is use percentage/em for the layout and boxes and images. use rem for the text,
+font and icons as they sd not depend on the parent padding and sizes */
+/* entire body family has same font */
+body{
+  font-family: "Montserrat";
+  text-align: center;
+}
+/* headding tag, it inherits the font from the body*/
+h3{
+  font-weight: 900; /*bold*/
+}
+p{
+  color:#8f8f8f;
+}
+/*-------------------------id related css-----------------------------*/
+
+/* this is the title section with the same font-color throught*/
+#title{
+  text-align: left;
+}
+/* for feature section */
+#features{
+  margin:0 0 0 0;
+  position: relative;
+}
+/* for testimonial */
+#testimonials{
+  /* padding: 5% 15%; */
+  background-color: #ef8172;
+}
+#press{
+  background-color: #ef8172;
+  padding-bottom: 4%;
+}
+#pricing{
+  padding: 6%;
+}
+#cta{
+  padding: 5% 15%;
+}
+#footer{
+  padding: 5% 15%;
+}
+
+/*----------------------class related css---------------------------*/
+
+/* ~~~~~~~~title section css~~~~~~~~*/
+/* container within the title section*/
+.container-fluid{
+  padding: 3% 15% 6%;
+}
+.navbar{
+padding: 0 0 4.5rem;
+}
+.navbar-brand{
+  /* this inclues the text hence rem */
+font-family: Ubuntu;
+font-size: 2.5rem;
+font-weight: 500;
+}
+.nav-item{
+  padding:0 18px;
+}
+.nav-link{
+  /* also text hence rem */
+  font-size: 1.2rem;
+}
+
+.main-headding{
+  /* is of type text so rem*/
+  font-size: 3.5rem;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0 0 5% 0;
+
+}
+
+.title-img{
+  right:30%;
+  margin-top: 3%;
+  width: 60%;
+  transform: rotate(25deg);  /*rotates clockwise*/
+  position: absolute;
+}
+.button-space{
+  margin-right: 3%;
+}
+/* ~~~~~~~~end of title section css~~~~~~~~*/
+
+/* ~~~~starting of features section~~~~~~ */
+.feature-box{
+  padding: 0 2% 0;
+  margin-top:5%;
+  margin-bottom: 6%;
+}
+.feature-icon{
+  color:#ff4c68;
+  margin-bottom: 1rem;
+}
+.feature-icon:hover{
+  color:red;
+}
+/* ~~~~starting of features section~~~~~~ */
+
+/*~~~~~~starting testimonial sections~~~~~*/
+.testimnial-text{
+  font-size: 2.5rem;
+  line-height: 1.5;
+
+}
+
+.testimonial-img{
+  width: 10%;
+  border-radius: 100%; /* 100% yeilds the round border */
+
+}
+.carousel-inner{
+  padding: 5% 15%;
+}
+/* ~~~~~~end of the testimnial section ~~~~~~*/
+
+/* ~~~~~~starting of the press section~~~~~~ */
+.press-images{
+  width: 15%;
+  margin: 2%;
+}
+/*~~~~~~ end of the press section~~~~~~ */
+
+/* ~~~~~~pricing section~~~~~~ */
+
+.pricing-line{
+  font-size: 2.5rem;
+  line-height: 1.5;
+
+}
+
+.actual-price{
+  font-size: 2.5rem;
+  line-height: 1.5;
+}
+
+.pricing-col{
+  padding: 3% 2%;
+}
+
+/* ~~~~~~cta section ~~~~~~*/
+.cta-headding{
+  font-family: Montserrat;
+  line-height: 1.5;
+  font-size: 3rem;
+  font-weight: 900;
+}
+/* ~~~~~~footer section ~~~~~~*/
+.footer-icon{
+  margin: 20px 10px;
+}
+
+/* sections with the colours  */
+.colored-section{
+  background-color: #ff4c68;
+  color: white;
+}
+
+.white-section{
+  background-color: white;
+
+}
+
+/* making the website more responsive */
+/* media query funcions */
+
+@media (max-width:1028px) {
+  .title-img{
+    position: static;
+    transform: rotate(0);
+  }
+
+  #title{
+    text-align: center;
+  }
+}
