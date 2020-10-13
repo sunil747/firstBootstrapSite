@@ -183,6 +183,7 @@ p {
 
 /* making the website more responsive */
 /* media query funcions */
+/* max -width specifies if its not of the specified pixel 1028 apply changes */
 @media (max-width:1028px) {
   .navbar-nav {
     background-color: #b55463;
